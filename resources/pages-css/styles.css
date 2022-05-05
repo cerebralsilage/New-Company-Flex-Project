@@ -7,7 +7,10 @@ html {
 a {
 	transition: all 300ms linear;
 	text-decoration: none;
-
+  opacity: .9;
+	font-weight: 500;
+	text-shadow: 1px 1px #724343;
+	color: black;
 }
 
 body {
@@ -48,10 +51,6 @@ nav ul {
 
 nav a {
   font-size: 1.2rem;
-	opacity: .9;
-	font-weight: 500;
-	text-shadow: 1px 1px #724343;
-	color: black;
 }
 
 nav li {
@@ -100,8 +99,286 @@ li a:active {
 }
 
 .conbutton2 {
+  background-color: #edebeb;
+	margin: 0 3% 1px 0;
+	width: 70px;
+	border: 4px ridge #99241c;
+	border-radius: 7px;
+	display: flex;
+	box-shadow: 2px 2px #b11919;
+	max-height: 43px;
+	padding: 5px 2px 6px 2px;
+  font-weight: 500;
+	text-shadow: 1px 1px #c02020;
+  text-decoration: none;
+	font-size: .9rem;
+	color: black;
+	justify-content: center;
+}
+
+.conbutton2:hover {
+   color: #00000075;
+}
+
+.conbutton2:active {
+	text-shadow: none;
+	box-shadow: inset 2px 2px #b11919;
+  background-color: #f1f1f1;
+  }
+
+.conbutton2 {
 	display: none;
 }
+
+
+/* -- banner -- */
+
+#banner { 
+  background-image: url("../pics/umbrellabanner.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  height: 340px;
+  width: 80%;
+  background-repeat: no-repeat;
+  margin: 170px auto 10px auto;
+}
+
+
+/* -- Main Section -- */
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+
+}
+
+.main h2 {
+	color: gray;
+	margin-bottom: 0;
+}
+
+.main p {
+	color: gray;
+	padding: 0 20px;
+}
+
+
+/* -- Products Section -- */
+
+#products {
+  display: flex;
+  justify-content: center;
+  gap: 3.88rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+  object-fit: cover;
+  border-top: 2px solid gray;
+  padding-top: 80px;
+}
+
+.ptitle {
+	color: gray;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pcard {
+  background-color: gray;
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 5px groove #afaaaa;
+  align-items: center;
+  height: 379px;
+}
+
+.pcard a {
+	width: 100%;
+	height: 67%;
+}
+
+.pcard img {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+.pcard h3 {
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+.pcard p {
+  padding: 0 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+/* -- Staff Section -- */
+
+#staff {
+  display: flex;
+  justify-content: center;
+  gap: 3.88rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 120px;
+  object-fit: cover;
+  border-top: 2px solid gray;
+}
+
+.stitle {
+	color: gray;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 70px;
+}
+
+.scard {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 5px groove #afaaaa;
+  align-items: center;
+  height: 379px;
+  width: 300px;
+}
+
+.scard img {
+  width: 100%;
+  height: 90%;
+  border-bottom: 4px solid black;
+  flex-shrink: 2;
+}
+
+.scard h4 {
+  margin: 0; 
+  padding: 4px 0;
+}
+
+.scard P {
+	font-weight: 400;
+	margin: 0 0 0 4px;
+}
+
+.text-div {
+	display: flex;
+	align-items: center;
+}
+
+
+/* -- Contact Page -- */
+
+main h1 {
+  margin-top: 160px;
+  color: #ded9d9;
+  text-align: center;
+}
+
+.concontainer {
+  display: flex;
+  margin: 60px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.concontainer img {
+  width: 400px;
+  height: 400px;
+  margin-right: 10%;
+  align-self: center;
+}
+
+form {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background: gray;
+	width: 260px;
+}
+
+label {
+	font-weight: bold;
+	opacity: .75;
+}
+
+input {
+	width: 250px;
+	height: 25px;
+	background:#f8eeee;
+	border: 3px solid #6e5b5b;
+}
+
+textarea {
+	background:#f8eeee;
+	border: 3px solid #6e5b5b;
+	width: 250px;
+	height: 200px;
+	resize: none;
+}
+
+#submit {
+	background-color: #ded9d9;
+	width: 140px;
+	border: 4px ridge #99241c;
+	border-radius: 7px;
+	box-shadow: 2px 2px #b11919;
+	height: 43px;
+  font-weight: 500;
+	text-shadow: 1px 1px #c02020;
+	font-size: 1.2rem;
+	color: black;
+	margin: 0 auto;
+}
+
+#submit:hover {
+   color: #00000075;
+}
+
+#submit:active {
+	text-shadow: none;
+	box-shadow: inset 2px 2px #b11919;
+  background-color: #dedad9;
+}
+
+
+/* -- Footer Section -- */
+
+footer {
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+.fcontainer {
+	background-color: gray;
+	height: 80px;
+	width: 100%;
+	margin-top: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p {
+	margin-left: 10px;
+}
+
+
+/* -- Nav Bar Media Style -- */
 
 @media only screen and (max-width: 1184px) {
 	.logo {
@@ -207,26 +484,13 @@ li a:active {
 }
 
 
-/* -- banner -- */
-
-#banner { 
-  background-image: url("resources/pics/umbrellabanner.jpg");
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  height: 340px;
-  width: 80%;
-  background-repeat: no-repeat;
-  margin: 170px auto 10px auto;
-}
+/* -- Banner Media Style -- */
 
 @media only screen and (max-width: 1200px) {
 	#banner {
 		margin-top: 140px;
 	}
 }
-
-
 
 @media only screen and (max-width: 1000px) {
 	#banner {
@@ -263,25 +527,7 @@ li a:active {
 }
 
 
-/* -- Main Section -- */
-
-.main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 40px;
-
-}
-
-.main h2 {
-	color: gray;
-	margin-bottom: 0;
-}
-
-.main p {
-	color: gray;
-	padding: 0 20px;
-}
+/* -- Main Media Style -- */
 
 @media only screen and (max-width: 700px) {
 	.main {
@@ -293,65 +539,14 @@ li a:active {
 	.main h2 {
 		font-size: 1.1rem;
 	}
+
 	.main p {
 		font-size: .9rem;
 	}
 }
-/* -- Products Section -- */
 
-#products {
-  display: flex;
-  justify-content: center;
-  gap: 3.88rem;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 100px;
-  object-fit: cover;
-  border-top: 2px solid gray;
-  padding-top: 80px;
-}
 
-.ptitle {
-	color: gray;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.pcard {
-  background-color: gray;
-  display: flex;
-  width: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 5px groove #afaaaa;
-  align-items: center;
-  height: 379px;
-}
-
-.pcard a {
-	width: 100%;
-	height: 67%;
-}
-
-.pcard img {
-  width: 100%;
-  height: 100%;
-  border-bottom: 2px solid black;
-}
-
-.pcard h3 {
-  margin-bottom: 2px;
-  margin-top: 10px;
-}
-
-.pcard p {
-  padding: 0 20px;
-  margin-top: 0;
-  text-align: center;
-
-}
+/* -- Product Media Style -- */
 
 @media only screen and (max-width: 800px) {
 	.products {
@@ -360,175 +555,40 @@ li a:active {
 	}
 }
 
-
-
 @media only screen and (max-width: 560px) {
 	.ptitle h2 {
 		font-size: 1.1rem;
 	}
-	
 }
 
-/* -- Staff Section -- */
 
-#staff {
-  display: flex;
-  justify-content: center;
-  gap: 3.88rem;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 120px;
-  object-fit: cover;
-  border-top: 2px solid gray;
-}
-
-.stitle {
-	color: gray;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 70px;
-}
-
-.scard {
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border: 5px groove #afaaaa;
-  align-items: center;
-  height: 379px;
-  width: 300px;
-
-}
-
-.scard img {
-  width: 100%;
-  height: 90%;
-  border-bottom: 4px solid black;
-  flex-shrink: 2;
-}
-
-.scard h4 {
-  margin: 0; 
-  padding: 4px 0;
-}
-
-.scard P {
-	font-weight: 400;
-	margin: 0 0 0 4px;
-
-}
-
-.text-div {
-	display: flex;
-	align-items: center;
-
-}
+/* -- Staff Media Style -- */
 
 @media only screen and (max-width: 800px) {
 	.staff {
 		margin-top: 60px;
 		padding-top: 40px;
 	}
+
   .stitle {
   	margin-top: 0;
   }
-  
 }
-
-
 
 @media only screen and (max-width: 560px) {
 	.staff h2 {
 		font-size: 1.1rem;
-	}
-	
+	}	
 }
 
-/* -- Contact Page -- */
 
-main h1 {
-  margin-top: 160px;
-  color: #ded9d9;
-  text-align: center;
-}
-
-.concontainer {
-  display: flex;
-  margin: 60px auto;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.concontainer img {
-  width: 400px;
-  height: 400px;
-  margin-right: 10%;
-  align-self: center;
-}
-
-form {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	background: gray;
-	width: 260px;
-}
-
-label {
-	font-weight: bold;
-	opacity: .75;
-}
-
-input {
-	width: 250px;
-	height: 25px;
-	background:#f8eeee;
-	border: 3px solid #6e5b5b;
-}
-
-textarea {
-	background:#f8eeee;
-	border: 3px solid #6e5b5b;
-	width: 250px;
-	height: 200px;
-	resize: none;
-}
-
-#submit {
-	background-color: #ded9d9;
-	width: 140px;
-	border: 4px ridge #99241c;
-	border-radius: 7px;
-	box-shadow: 2px 2px #b11919;
-	height: 43px;
-  font-weight: 500;
-	text-shadow: 1px 1px #c02020;
-	font-size: 1.2rem;
-	color: black;
-	margin: 0 auto;
-}
-
-#submit:hover {
-   color: #00000075;
-}
-
-#submit:active {
-	text-shadow: none;
-	box-shadow: inset 2px 2px #b11919;
-  background-color: #dedad9;
-}
+/* -- Contact Page Media Style -- */
 
 @media only screen and (max-width: 840px) {
 	.concontainer img {
     width: 350px;
     height: 350px;
     margin-right: 5%;
-    
 	}
 }
 
@@ -547,29 +607,10 @@ textarea {
 		height: 300px;
 		width: 300px;
 	}
-}
+} 
 
-/* -- Footer Section -- */
 
-footer {
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-}
-
-.fcontainer {
-	background-color: gray;
-	height: 80px;
-	width: 100%;
-	margin-top: 90px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-footer p {
-	margin-left: 10px;
-}
+/* -- Footer Media Style -- */
 
 @media only screen and (max-width: 664px) {
 	footer h4 {
