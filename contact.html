@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/pics/favicon.ico">
+    <link rel="stylesheet" href="styles.css" type ="text/css">
+    <title>Umbrella Corporation</title>
+  </head>
+
+  <body>  
+      
+    <nav>
+      <img class="logo" src="resources/pics/umbrellaname.png">
+      <ul class="content">
+        <li><a href="index.html">Mission</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#staff">Staff</a></li>
+      </ul>
+    </nav>
+      
+    <main>
+      <h1>Contact Us</h1>
+      <div class="concontainer">
+        <img src="resources/pics/biglogo.webp"> 
+        <form action="">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" pattern="[A-Za-z]{1,32}" required/>
+          <br>
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" pattern="[A-Za-z]{1,32}" required/>
+          <br>
+          <label for="email">Email Address:</label>
+          <input id="email" name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" required/>
+          <br>
+          <label for="question">Your Message Here:</label>
+          <textarea id="question" name="question" type="text" required></textarea>
+          <br>
+          <input id="submit" type="Submit"/>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="fcontainer">
+        <h4>Copyright:</h4>
+        <p>Umbrella Corp. 2022</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

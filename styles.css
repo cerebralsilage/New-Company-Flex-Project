@@ -1,0 +1,585 @@
+/* == Flex Company Project == */
+
+html {
+	font-family: "Anek Latin";
+}
+
+a {
+	transition: all 300ms linear;
+	text-decoration: none;
+
+}
+
+body {
+	background-color: black;
+	margin: 0;
+}
+
+
+/* -- Nav Bar -- */
+
+nav {
+	background-color: gray;
+	position: fixed;
+	display: flex;
+	max-height: 60px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	border-top: 7px ridge #afaaaa;
+	border-bottom: 7px groove #afaaaa;
+	bottom: 0;
+	flex-direction: row;
+}
+
+.logo {
+	margin-right: 180px;
+	padding-left: 1rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+}
+
+nav a {
+  font-size: 1.2rem;
+	opacity: .9;
+	font-weight: 500;
+	text-shadow: 1px 1px #724343;
+	color: black;
+}
+
+nav li {
+	list-style: none;
+	flex: 1 1 0;
+}
+
+li a:hover {
+   cursor: pointer;
+   opacity: .7;
+}
+
+li a:active {
+  opacity: none;
+  text-shadow: none;
+  color: black;
+}
+
+.conbutton {
+	background-color: #edebeb;
+	margin: 0 3% 1px 0;
+	width: 140px;
+	border: 4px ridge #99241c;
+	border-radius: 7px;
+	display: flex;
+	box-shadow: 2px 2px #b11919;
+	max-height: 43px;
+	padding: 10px 2px 12px 2px;
+  font-weight: 500;
+	text-shadow: 1px 1px #c02020;
+  text-decoration: none;
+	font-size: 1.2rem;
+	color: black;
+	justify-content: center;
+}
+
+
+.conbutton:hover {
+   color: #00000075;
+}
+
+.conbutton:active {
+	text-shadow: none;
+	box-shadow: inset 2px 2px #b11919;
+  background-color: #dedad9;
+}
+
+.conbutton2 {
+	display: none;
+}
+
+@media only screen and (max-width: 1184px) {
+	.logo {
+		margin-right: 7%;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.logo {
+		margin-right: 5%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.logo {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 829px) {
+	.conbutton {
+		font-size: .8rem;
+		width: 104px;	
+	}
+
+	nav a {
+		font-size: .9rem;
+	}
+}
+
+@media only screen and (max-width: 716px) {
+	.logo {
+		margin-right: 2%;
+		width: 170px;
+	}
+
+	nav ul {
+		padding-left: 0;
+
+	}
+
+	nav li {
+		flex: 0 0 0;
+	}
+
+	.conbutton2 {
+  background-color: #edebeb;
+	margin: 0 3% 1px 0;
+	width: 70px;
+	border: 4px ridge #99241c;
+	border-radius: 7px;
+	display: flex;
+	box-shadow: 2px 2px #b11919;
+	max-height: 43px;
+	padding: 5px 2px 6px 2px;
+  font-weight: 500;
+	text-shadow: 1px 1px #c02020;
+  text-decoration: none;
+	font-size: .9rem;
+	color: black;
+	justify-content: center;
+}
+
+.conbutton2:hover {
+   color: #00000075;
+}
+
+.conbutton2:active {
+	text-shadow: none;
+	box-shadow: inset 2px 2px #b11919;
+  background-color: #f1f1f1;
+  }
+
+  .conbutton {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.conbutton2 {
+		width: 50px;
+	}
+
+	.logo {
+		width: 150px;
+		margin-right: 0;
+	}
+
+	nav {
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	nav a {
+		font-size: .8rem;
+	}
+
+	.conbutton2 {
+		font-size: .7rem;
+		width: 40px;
+	}
+}
+
+
+/* -- banner -- */
+
+#banner { 
+  background-image: url("resources/pics/umbrellabanner.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  height: 340px;
+  width: 80%;
+  background-repeat: no-repeat;
+  margin: 170px auto 10px auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	#banner {
+		margin-top: 140px;
+	}
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+	#banner {
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#banner {
+		margin-top: 80px;
+		width: 90%;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#banner {
+		margin-top: 70px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	#banner {
+		width: 95%;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#banner {
+		margin-top: 30px;
+		width: 98%;
+	}
+}
+
+
+/* -- Main Section -- */
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+
+}
+
+.main h2 {
+	color: gray;
+	margin-bottom: 0;
+}
+
+.main p {
+	color: gray;
+	padding: 0 20px;
+}
+
+@media only screen and (max-width: 700px) {
+	.main {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.main h2 {
+		font-size: 1.1rem;
+	}
+	.main p {
+		font-size: .9rem;
+	}
+}
+/* -- Products Section -- */
+
+#products {
+  display: inline-flex;
+  justify-content: center;
+  gap: 3.88rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+  object-fit: cover;
+  border-top: 2px solid gray;
+  padding-top: 80px;
+}
+
+.ptitle {
+	color: gray;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pcard {
+  background-color: gray;
+  display: flex;
+  width: 15%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 5px groove #afaaaa;
+  align-items: center;
+  min-width: 254px;
+  height: 333px;
+}
+
+.pcard a {
+	width: 100%;
+	height: 60%;
+}
+
+.pcard img {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+.pcard h3 {
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+.pcard p {
+  padding: 0 20px;
+  margin-top: 0;
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 800px) {
+	.products {
+		margin-top: 60px;
+		padding-top: 60px;
+	}
+}
+
+
+
+@media only screen and (max-width: 560px) {
+	.ptitle h2 {
+		font-size: 1.1rem;
+	}
+	
+}
+
+/* -- Staff Section -- */
+
+#staff {
+  display: flex;
+  justify-content: center;
+  gap: 3.88rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 120px;
+  object-fit: cover;
+  border-top: 2px solid gray;
+}
+
+.stitle {
+	color: gray;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 70px;
+}
+
+.scard {
+  background-color: gray;
+  display: flex;
+  width: 22%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 5px groove #afaaaa;
+  align-items: center;
+  height: 333px;
+  width: 254px;
+
+}
+
+.scard img {
+  width: 100%;
+  height: 90%;
+  border-bottom: 4px solid black;
+  flex-shrink: 2;
+}
+
+.scard h4 {
+  margin: 0; 
+  padding: 4px 0;
+}
+
+.scard P {
+	font-weight: 400;
+	margin: 0 0 0 4px;
+
+}
+
+.text-div {
+	display: flex;
+	align-items: center;
+
+}
+
+@media only screen and (max-width: 800px) {
+	.staff {
+		margin-top: 60px;
+		padding-top: 40px;
+	}
+  .stitle {
+  	margin-top: 0;
+  }
+  
+}
+
+
+
+@media only screen and (max-width: 560px) {
+	.staff h2 {
+		font-size: 1.1rem;
+	}
+	
+}
+
+/* -- Contact Page -- */
+
+main h1 {
+  margin-top: 160px;
+  color: #ded9d9;
+  text-align: center;
+}
+
+.concontainer {
+  display: flex;
+  margin: 60px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.concontainer img {
+  width: 400px;
+  height: 400px;
+  margin-right: 10%;
+  align-self: center;
+}
+
+form {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background: gray;
+	width: 260px;
+}
+
+label {
+	font-weight: bold;
+	opacity: .75;
+}
+
+input {
+	width: 250px;
+	height: 25px;
+	background:#f8eeee;
+	border: 3px solid #6e5b5b;
+}
+
+textarea {
+	background:#f8eeee;
+	border: 3px solid #6e5b5b;
+	width: 250px;
+	height: 200px;
+	resize: none;
+}
+
+#submit {
+	background-color: #ded9d9;
+	width: 140px;
+	border: 4px ridge #99241c;
+	border-radius: 7px;
+	box-shadow: 2px 2px #b11919;
+	height: 43px;
+  font-weight: 500;
+	text-shadow: 1px 1px #c02020;
+	font-size: 1.2rem;
+	color: black;
+	margin: 0 auto;
+}
+
+#submit:hover {
+   color: #00000075;
+}
+
+#submit:active {
+	text-shadow: none;
+	box-shadow: inset 2px 2px #b11919;
+  background-color: #dedad9;
+}
+
+@media only screen and (max-width: 840px) {
+	.concontainer img {
+    width: 350px;
+    height: 350px;
+    margin-right: 5%;
+    
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.concontainer {
+		flex-direction: column;
+	}
+
+	.concontainer img {
+		margin: 5% 0 20% 0;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.concontainer img {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+/* -- Footer Section -- */
+
+footer {
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+.fcontainer {
+	background-color: gray;
+	height: 80px;
+	width: 100%;
+	margin-top: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p {
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 664px) {
+	footer h4 {
+		font-size: .8rem;
+	}
+
+	footer p {
+		font-size: .8rem;
+	}
+}
