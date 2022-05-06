@@ -1,71 +1,71 @@
 /* == Flex Company Project == */
 
 html {
-	font-family: "Anek Latin";
+  font-family: "Anek Latin";
 }
 
 a {
-	transition: all 300ms linear;
-	text-decoration: none;
+  transition: all 300ms linear;
+  text-decoration: none;
   opacity: .9;
-	font-weight: 500;
-	text-shadow: 1px 1px #724343;
-	color: black;
+  font-weight: 500;
+  text-shadow: 1px 1px #724343;
+  color: black;
 }
 
 body {
-	background-color: black;
-	margin: 0;
-	height: 100%;
-	width: 100vw;
+  background-color: black;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
 }
 
 h1,
 h2 {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 h3 {
-	font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h4 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 p {
-	font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 /* -- Nav Bar -- */
 
 nav {
-	background-color: gray;
-	position: fixed;
-	display: flex;
-	height: 8%;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	top: 0;
-	left: 0;
-	z-index: 5;
-	border-top: 7px ridge #afaaaa;
-	border-bottom: 7px groove #afaaaa;
-	bottom: 0;
-	flex-direction: row;
+  background-color: gray;
+  position: fixed;
+  display: flex;
+  height: 8%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-top: 7px ridge #afaaaa;
+  border-bottom: 7px groove #afaaaa;
+  bottom: 0;
+  flex-direction: row;
 }
 
 .logo {
-	margin-right: 180px;
-	padding-left: 1rem;
-	height: 75%;
+  margin-right: 180px;
+  padding-left: 1rem;
+  height: 75%;
 }
 
 nav ul {
-	display: none;
-	justify-content: space-around;
-	width: 70%;
+  display: none;
+  justify-content: space-around;
+  width: 70%;
 }
 
 nav a {
@@ -73,8 +73,8 @@ nav a {
 }
 
 nav li {
-	list-style: none;
-	flex: 1 1 0;
+  list-style: none;
+  flex: 1 1 0;
 }
 
 li a:hover {
@@ -89,21 +89,21 @@ li a:active {
 }
 
 .conbutton {
-	background-color: #ded9d9;
-	margin: 0 2% 1px 0;
-	width: 110px;
-	border: 4px ridge #99241c;
-	border-radius: 7px;
-	display: none;
-	box-shadow: 2px 2px #b11919;
-	max-height: 43px;
-	padding: 10px 2px 12px 2px;
+  background-color: #ded9d9;
+  margin: 0 2% 1px 0;
+  width: 110px;
+  border: 4px ridge #99241c;
+  border-radius: 7px;
+  display: none;
+  box-shadow: 2px 2px #b11919;
+  max-height: 43px;
+  padding: 10px 2px 12px 2px;
   font-weight: 500;
-	text-shadow: 1px 1px #c02020;
+  text-shadow: 1px 1px #c02020;
   text-decoration: none;
-	font-size: 1.1rem;
-	color: black;
-	justify-content: center;
+  font-size: 1.1rem;
+  color: black;
+  justify-content: center;
 }
 
 .conbutton:hover {
@@ -111,66 +111,66 @@ li a:active {
 }
 
 .conbutton:active {
-	text-shadow: none;
-	box-shadow: inset 2px 2px #b11919;
+  text-shadow: none;
+  box-shadow: inset 2px 2px #b11919;
   background-color: #dedad9;
 }
 
 .dropbtn {
-		background-color: #b4b0b0;
-		border: 4px outset #7c4444;
-		border-radius: 10px;
-		margin-right: 20px;
-		height: 90px;
-		width: 90px;
-	}
+    background-color: #b4b0b0;
+    border: 4px outset #7c4444;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 90px;
+    width: 90px;
+  }
 
-	.dropbtn img {
-	height: 70%;
-	width: 85%;
-	padding-top: 4px;
-	opacity: 0.7;
+  .dropbtn img {
+  height: 70%;
+  width: 85%;
+  padding-top: 4px;
+  opacity: 0.7;
 }
 
-	.dropdown {
-		position: relavtive;
-		display: inline-block;
-	}
+  .dropdown {
+    position: relavtive;
+    display: inline-block;
+  }
 
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #b1aeae;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-		right: 4px;
-		text-align: center;
-		border: 3px outset #7c4444;
-	}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b1aeae;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 4px;
+    text-align: center;
+    border: 3px outset #7c4444;
+  }
 
-	.dropdown-content a {
-		padding: 8px 12px;
-		text-decoration: none;
-		display: block;
-		font-size: 3rem;
-	}
+  .dropdown-content a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 3rem;
+  }
 
-	.dropdown-content a:hover {
-		background-color: #ddd;
-	}
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
 
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .dropdown:hover .dropbtn {
-	background-color: #dcd4d4;
+  background-color: #dcd4d4;
 }
 
 .dropdown:active .dropbtn {
-	text-shadow: none;
-	box-shadow: inset 2px 2px #673939;
+  text-shadow: none;
+  box-shadow: inset 2px 2px #673939;
   background-color: #a7a4a4;
 }
 
@@ -191,27 +191,27 @@ li a:active {
 /* -- Main Section -- */
 
 .main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
 
 }
 
 .main h2 {
-	color: gray;
-	margin: 0;
-	width: 100%;
-	text-align: center;
+  color: gray;
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .main p {
-	color: gray;
-	padding: 0 60px;
-	margin-top: 15px;
-	margin-bottom: 0;
-	font-size: 2rem;
-	text-align: justify;
+  color: gray;
+  padding: 0 60px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 2rem;
+  text-align: justify;
 }
 
 
@@ -230,13 +230,13 @@ li a:active {
 }
 
 .ptitle {
-	color: gray;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	height: 0;
-	margin-bottom: 75px;
+  color: gray;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 0;
+  margin-bottom: 75px;
 }
 
 .pcard {
@@ -252,9 +252,9 @@ li a:active {
 }
 
 .pcard a {
-	width: 100%;
-	height: 67%;
-	align-self: flex-start;
+  width: 100%;
+  height: 67%;
+  align-self: flex-start;
 }
 
 .pcard img {
@@ -289,12 +289,12 @@ li a:active {
 }
 
 .stitle {
-	color: gray;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 66px 0 10px 0;
+  color: gray;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 66px 0 10px 0;
 }
 
 .scard {
@@ -324,14 +324,14 @@ li a:active {
 }
 
 .scard P {
-	font-weight: 400;
-	margin: 0 0 0 20px;
+  font-weight: 400;
+  margin: 0 0 0 20px;
 }
 
 .text-div {
-	display: flex;
-	align-items: center;
-	margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
 }
 
 
@@ -361,47 +361,47 @@ main h1 {
 }
 
 form {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	background: gray;
-	width: 70%;
-	height: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: gray;
+  width: 70%;
+  height: 800px;
 }
 
 label {
-	font-weight: bold;
-	opacity: .75;
-	font-size: 3rem;
-	margin-bottom: 10px;
+  font-weight: bold;
+  opacity: .75;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 input {
-	width: 98%;
-	height: 50px;
-	background:#f8eeee;
-	border: 3px solid #6e5b5b;
+  width: 98%;
+  height: 50px;
+  background:#f8eeee;
+  border: 3px solid #6e5b5b;
 }
 
 textarea {
-	background:#f8eeee;
-	border: 3px solid #6e5b5b;
-	width: 98%;
-	height: 280px;
+  background:#f8eeee;
+  border: 3px solid #6e5b5b;
+  width: 98%;
+  height: 280px;
 }
 
 #submit {
-	background-color: #ded9d9;
-	width: 240px;
-	border: 4px ridge #99241c;
-	border-radius: 7px;
-	box-shadow: 2px 2px #b11919;
-	height: 90px;
+  background-color: #ded9d9;
+  width: 240px;
+  border: 4px ridge #99241c;
+  border-radius: 7px;
+  box-shadow: 2px 2px #b11919;
+  height: 90px;
   font-weight: 500;
-	text-shadow: 1px 1px #c02020;
-	font-size: 3rem;
-	color: black;
-	margin: 0 auto;
+  text-shadow: 1px 1px #c02020;
+  font-size: 3rem;
+  color: black;
+  margin: 0 auto;
 }
 
 #submit:hover {
@@ -409,8 +409,8 @@ textarea {
 }
 
 #submit:active {
-	text-shadow: none;
-	box-shadow: inset 2px 2px #b11919;
+  text-shadow: none;
+  box-shadow: inset 2px 2px #b11919;
   background-color: #dedad9;
 }
 
@@ -418,23 +418,23 @@ textarea {
 /* -- Footer Section -- */
 
 footer {
-	width: 100%;
-	bottom: 0;
-	text-align: center;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
 }
 
 .fcontainer {
-	background-color: gray;
-	height: 200px;
-	width: 100%;
-	margin-top: 200px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background-color: gray;
+  height: 200px;
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer p {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 
