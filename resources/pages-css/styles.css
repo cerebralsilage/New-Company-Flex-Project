@@ -72,7 +72,7 @@ li a:active {
 .conbutton {
 	background-color: #edebeb;
 	margin: 0 3% 1px 0;
-	width: 140px;
+	width: 110px;
 	border: 4px ridge #99241c;
 	border-radius: 7px;
 	display: flex;
@@ -151,18 +151,21 @@ li a:active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 40px;
+	margin-top: 90px;
 
 }
 
 .main h2 {
 	color: gray;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .main p {
 	color: gray;
 	padding: 0 20px;
+	margin-top: 1px;
+	margin-bottom: 0;
+	font-size: 1.1rem;
 }
 
 
@@ -171,13 +174,13 @@ li a:active {
 #products {
   display: flex;
   justify-content: center;
-  gap: 3.88rem;
+  gap: 3.6rem;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 90px;
   object-fit: cover;
   border-top: 2px solid gray;
-  padding-top: 80px;
+  padding-top: 65px;
 }
 
 .ptitle {
@@ -186,6 +189,8 @@ li a:active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	height: 0;
+	margin-bottom: 75px;
 }
 
 .pcard {
@@ -227,10 +232,10 @@ li a:active {
 #staff {
   display: flex;
   justify-content: center;
-  gap: 3.88rem;
+  gap: 3.6rem;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 100px;
   object-fit: cover;
   border-top: 2px solid gray;
 }
@@ -241,7 +246,7 @@ li a:active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 70px;
+	margin: 66px 0 10px 0;
 }
 
 .scard {
@@ -367,7 +372,7 @@ footer {
 	background-color: gray;
 	height: 80px;
 	width: 100%;
-	margin-top: 90px;
+	margin-top: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
