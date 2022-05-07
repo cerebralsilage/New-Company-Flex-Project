@@ -47,14 +47,13 @@ nav {
 
 nav ul {
   display: none;
-  justify-content: flex-end;
+  justify-content: space-around;
   width: 70%;
-
+  font-size: 1.2rem;
 }
 
 nav li {
   list-style: none;
-  flex: 1 1 0;
 }
 
 li a:hover {
@@ -70,13 +69,13 @@ li a:active {
 
 .conbutton {
   background-color: #ded9d9;
-  margin: 0 2% 1px 0;
-  width: 110px;
+  margin: 0 10px 1px 10px;
+  width: 80px;
   border: 4px ridge #99241c;
   border-radius: 7px;
   display: none;
   box-shadow: 2px 2px #b11919;
-  max-height: 43px;
+  max-height: 15px;
   padding: 10px 2px 12px 2px;
   font-weight: 500;
   text-shadow: 1px 1px #c02020;
@@ -84,6 +83,7 @@ li a:active {
   font-size: 1.1rem;
   color: black;
   justify-content: center;
+  align-items: center;
 }
 
 .conbutton:hover {
@@ -138,6 +138,7 @@ li a:active {
   padding: 4px 6px;
   text-decoration: none;
   display: block;
+  font-size: 1.2rem;
 }
 
 .dropdown-content a:hover {
@@ -259,7 +260,7 @@ li a:active {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 110px;
+  margin: 110px 0 70px 0;
   object-fit: cover;
   border-top: 2px solid gray;
   gap: 60px;
@@ -313,26 +314,30 @@ li a:active {
 /* -- Contact Page -- */
 
 main h1 {
-  margin-top: 400px;
-  margin-bottom: 300px;
+  margin-top: 115px;
   color: #ded9d9;
   text-align: center;
 }
 
 .concontainer {
   display: flex;
-  margin: 120px auto;
+  margin-bottom: 70px;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  z-index: 5;
 }
 
-.concontainer img {
-  width: 400px;
-  height: 400px;
-  margin-right: 10%;
-  align-self: center;
-  display: none;
+.conbacpic {
+  background-image: url(../pics/biglogo.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 630px;
+  background-position: center center;
+  z-index: 1;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
@@ -340,20 +345,21 @@ form {
   display: flex;
   flex-direction: column;
   background: gray;
-  width: 70%;
-  height: 800px;
+  width: 80%;
+  max-width: 415px;
+  height: 500px;
 }
 
 label {
   font-weight: bold;
   opacity: .75;
-  font-size: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 input {
   width: 98%;
-  height: 50px;
+  max-width: 440px;
+  height: 30px;
   background:#f8eeee;
   border: 3px solid #6e5b5b;
 }
@@ -361,20 +367,21 @@ input {
 textarea {
   background:#f8eeee;
   border: 3px solid #6e5b5b;
+  max-width: 440px;
   width: 98%;
-  height: 280px;
+  height: 200px;
 }
 
 #submit {
   background-color: #ded9d9;
-  width: 240px;
+  width: 110px;
   border: 4px ridge #99241c;
   border-radius: 7px;
   box-shadow: 2px 2px #b11919;
-  height: 90px;
+  height: 50px;
   font-weight: 500;
   text-shadow: 1px 1px #c02020;
-  font-size: 3rem;
+  font-size: 1.1rem;
   color: black;
   margin: 0 auto;
 }
@@ -402,7 +409,6 @@ footer {
   background-color: gray;
   height: 90px;
   width: 100%;
-  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,5 +499,27 @@ footer p {
   .dropbtn {
     display: none;
   }
+
+  .conbacpic {
+    height: 700px;
+  }
+
 }
 
+@media only screen and (min-width: 800px) {
+  #banner {
+    height: 344px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #banner {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  #banner {
+    margin-bottom: 80px;
+  }
+}
