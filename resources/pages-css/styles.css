@@ -139,6 +139,7 @@ li a:active {
   text-decoration: none;
   display: block;
   font-size: 1.2rem;
+  border: 2px groove #7c4444;
 }
 
 .dropdown-content a:hover {
@@ -370,6 +371,7 @@ textarea {
   max-width: 440px;
   width: 98%;
   height: 200px;
+  resize: none;
 }
 
 #submit {
